@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(33, 33, 33);
+  color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 20px 5vw 10px 5vw;
+  font-family: Courier New;
+}
+
+#title {
+  font-weight: bold;
+  font-size: calc(36px + 0.8vw);
+}
+
+#tableOfContents {
+  font-size: calc(16px + 0.75vw);
+  padding: 20px 0;
+  width: 50%;
+}
+
+#tableOfContents div:hover {
+  cursor: pointer;
+  color: #61dbfb;
+  font-weight: bold;
+}
+
+#tableOfContents span {
+  font-size: calc(12px + 0.2vw);
+}
+
+.code-block {
+  background-color: rgb(41, 41, 41);
+  color: rgb(4, 172, 66);
+  padding: 10px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  svg {
+    width: calc(437px + 36vw);
+    height: calc(121px + 10vw);
+  }
+}
+
+@media screen and (max-width: 799px) {
+  svg {
+    width: calc(218px + 36vw);
+    height: calc(60px + 10vw);
+  }
+  #tableOfContents {
+    font-size: calc(12px + 0.6vw);
+    width: 75%;
+  }
+}
+
+#atom {
+  animation: spin 10s linear infinite;
+  transform-origin: 72px 60px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+a:link {
+  color: white;
+}
+a:active {
+  color: #61dbfb;
+}
+a:visited {
+  color: #18bcee;
+}
+a:hover {
+  color: #61dbfb;
+}
